@@ -56,7 +56,7 @@ class ProductCard extends StatelessWidget {
                 ),
                 if ((product.discount as int) != 0)
                   Text(
-                    product.price.toString(),
+                    product.oldPrice.toString(),
                     style: const TextStyle(color: Colors.grey, fontSize: 14),
                   ),
                 const Spacer(),

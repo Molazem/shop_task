@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                         );
                       },
                       itemCount: theCategories.length)
-                  : const CircularProgressIndicator(),
+                  : const Center(child: CircularProgressIndicator()),
             ),
           ),
           // Products
@@ -113,7 +113,7 @@ class _HomePageState extends State<HomePage> {
                             product: currentProvider.myProducts[index]);
                       },
                     )
-                  : const CircularProgressIndicator()),
+                  : const Center(child: CircularProgressIndicator())),
         ],
       ),
     );
